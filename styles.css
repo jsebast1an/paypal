@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 83px 100px 500px;
+    grid-template-areas: "header" "section" "content";
+    overflow-x: hidden;
+}
+
+header
+{
+    grid-area: header;
+    background-color: #04438f  ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_btn,
+.header_notifications
+{
+    color: white;
+    margin: 0 1.2rem;
+    font-weight: 900;
+}
+
+section
+{
+    grid-area: section;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 
+    0px 1px 12px rgba(0, 0, 0, 0.17);
+    z-index: 1;
+}
+.section_menu_send
+{
+    color:#04438f;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 30px;
+    box-shadow: 
+    0px 1px 9px rgba(0, 0, 0, 0.21);
+    ;
+}
+
+#content
+{
+    grid-area: content;
+    background-color: white;
+}
+#content h3
+{
+    margin: 1rem 1rem 0.2rem 1rem;
+    font-weight: bold;
+}
+#content .paypal_balance
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paypal_balance h4
+{
+    font-size: 34px;
+    margin-bottom: 2rem;
+}
+
+.paypal_balance h5
+{
+    color: #04438f;
+    font-size: 29px;
+}
+
+.paypal_balance input
+{
+    border: 2px solid rgb(128, 128, 128);
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.paypal_balance input:hover,
+.paypal_balance input:focus {
+  border: 2px solid #04438f;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.paypal_balance button {
+    color: #F3F3F3;
+    font-weight: bold;
+    border: 2px solid #04438f;
+    background-color: #04438f;
+    border-radius: 0.9em;
+    padding: 9px 28px;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+   
+   
+button:hover {  
+    background-color: #0071e2;
+}
